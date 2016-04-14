@@ -3,15 +3,15 @@ baseurl:
 
 # Site settings
 title: SERVEL Technologies
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+email: servelproject@gmail.com
+description: "Assurez la réussite de votre oeuvre audio-visuelle en travaillant avec servel."
 
 
 # Team names, titles and social links
 people:
-- name: Kay Garland
+- name: Antonin Serouse
   pic: 1
-  position: Lead Designer
+  position: Porteur du projet
   social:
     - title: twitter
       url: #
@@ -20,9 +20,9 @@ people:
     - title: stack-overflow
       url: #
 
-- name: Larry Parker
+- name: Romain Trachel
   pic: 2
-  position: Lead Marketer
+  position: Porteur du projet
   social:
     - title: twitter
       url: #
@@ -31,16 +31,6 @@ people:
     - title: linkedin
       url: #
 
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
