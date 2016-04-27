@@ -1,15 +1,16 @@
 ---
-title: Escape
-subtitle: Website Design
+title: Heatmap for movie trailers
+subtitle: Visualize where viewers pay attention
 layout: default
 modal-id: 2
 date: 2014-07-17
-img: escape.png
-thumbnail: escape-thumbnail.png
+img: heatmap.png
+thumbnail: heatmap-thumbnail.png
 alt: image-alt
 project-date: April 2014
 client: Start Bootstrap
-category: Web Development
-description: Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
+category: Distribution
+description: blablabla
+reference: Parag K. Mital, Tim J. Smith, Robin Hill, John M. Henderson. “Clustering of Gaze during Dynamic Scene Viewing is Predicted by Motion” Cognitive Computation, Volume 3, Issue 1, pp 5-24, March 2011.
 
 ---
