@@ -50,7 +50,7 @@ a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #fec503;
+    color: #0099ff;
 }
 
 h1,
@@ -92,7 +92,7 @@ h6 {
 .open .dropdown-toggle.btn-primary {
     border-color: #0099ff;
     color: #fff;
-    background-color: #fec503;
+    background-color: #0099ff;
 }
 
 .btn-primary:active,
@@ -144,7 +144,7 @@ fieldset[disabled] .btn-primary.active {
 .open .dropdown-toggle.btn-xl {
     border-color: #0099ff;
     color: #fff;
-    background-color: #fec503;
+    background-color: #0099ff;
 }
 
 .btn-xl:active,
@@ -183,7 +183,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: "Times", "Helvetica Neue",Helvetica,Arial,cursive;
     color: #0099ff;
 }
 
@@ -191,7 +191,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #fec503;
+    color: #0099ff;
 }
 
 .navbar-default .navbar-collapse {
@@ -235,7 +235,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #fec503;
+    background-color: #0099ff;
 }
 
 @media(min-width:768px) {
