@@ -47,8 +47,8 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: INRIA - Sophia Antipolis/Méditerranée
+  - line: 2004 Route des Lucioles, 06902 Valbonne
 
 # Build settings
 markdown: kramdown
