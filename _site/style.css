@@ -183,7 +183,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Pacifico", cursive, "Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: "Pacifico", Arial,cursive, "Helvetica Neue",Helvetica,Arial,cursive;
     color: #0099ff;
 }
 
@@ -195,7 +195,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-collapse {
-    border-color: rgba(255,255,255,.02);
+    border-color: rgba(255,255,255,.7);
 }
 
 .navbar-default .navbar-toggle {
