@@ -11,6 +11,6 @@ project-date: April 2014
 client: Start Bootstrap
 category: Distribution
 description: blablabla
-reference: Parag K. Mital, Tim J. Smith, Robin Hill, John M. Henderson. “Clustering of Gaze during Dynamic Scene Viewing is Predicted by Motion” Cognitive Computation, Volume 3, Issue 1, pp 5-24, March 2011.
+video: "https://www.youtube.com/embed/oym3dAWdJP0"
 
 ---
