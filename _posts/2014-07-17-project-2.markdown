@@ -11,6 +11,6 @@ project-date: April 2014
 client: Start Bootstrap
 category: Distribution
 description: blablabla
-video: "https://www.youtube.com/embed/NVaqc8eQ2YQ"
+video: https://www.youtube.com/embed/NVaqc8eQ2YQ
 
 ---
