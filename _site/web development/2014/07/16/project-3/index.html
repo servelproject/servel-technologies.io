@@ -21,6 +21,15 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
+    <!-- amalia.js player stuff -->
+    <link type="text/css" rel="stylesheet" href="../css/amalia/amalia.js.min.css"/>
+
+    <!-- amalia.js dependencies -->
+    <script src="/js/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/js/bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script src="/js/bower_components/raphael/raphael.js"></script>
+    <script src="../js/amalia/amalia.js.min.js"></script>
+    <script src="../js/amalia/amalia.js-plugin-timeline.min.js"></script>    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -28,7 +37,6 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
 
 
     <body id="page-top" class="index">
@@ -148,7 +156,7 @@
                         <i class="fa fa-heart fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Biosensing</h4>
-                    <p class="text-muted">Measure brain activity, heart beats and skin conductance to reveal arousal and some emotions.</p>
+                    <p class="text-muted">Measure brain activity, heart beats and skin conductance to know when low arousal and some emotions happen.</p>
                 </div>
                 <div class="col-md-3">
                     <span class="fa-stack fa-4x">
@@ -164,7 +172,7 @@
                         <i class="fa fa-cubes fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Data science</h4>
-                    <p class="text-muted">Detect patterns of activity.</p>
+                    <p class="text-muted">Detect patterns of activity to predict the audience will like the media.</p>
                 </div>
                 <div class="col-md-3">
                     <span class="fa-stack fa-4x">
@@ -541,7 +549,22 @@
                         <div class="modal-body">
                             <h2>Gaze tracking and face analysis</h2>
                             <hr class="star-primary">
-                            <iframe width="560" height="315" src=https://youtu.be/G_5QRYVEPfg frameborder="0" allowfullscreen></iframe>
+                            <div class="demo">
+                                <div style="height: 500px;">
+                                    <div id="defaultPlayer"></div>
+                                </div>
+                                <script>
+                                    $(function () {
+                                        $("#defaultPlayer").mediaPlayer({
+                                            autoplay: false,
+                                            src: "../video/processed_50_people_brooklyn_1280x720.mp4",
+                                            controlBar: {
+                                                autohide: false
+                                            }
+                                        });
+                                    });
+                                </script>
+                            </div>
                             <p>We know where you watch!</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -579,7 +602,22 @@
                         <div class="modal-body">
                             <h2>Heatmap for movie trailers</h2>
                             <hr class="star-primary">
-                            <iframe width="560" height="315" src=https://www.youtube.com/embed/oym3dAWdJP0 frameborder="0" allowfullscreen></iframe>
+                            <div class="demo">
+                                <div style="height: 500px;">
+                                    <div id="defaultPlayer"></div>
+                                </div>
+                                <script>
+                                    $(function () {
+                                        $("#defaultPlayer").mediaPlayer({
+                                            autoplay: false,
+                                            src: "../video/processed_50_people_brooklyn_1280x720.mp4",
+                                            controlBar: {
+                                                autohide: false
+                                            }
+                                        });
+                                    });
+                                </script>
+                            </div>
                             <p>blablabla</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -617,7 +655,22 @@
                         <div class="modal-body">
                             <h2>Golden</h2>
                             <hr class="star-primary">
-                            <iframe width="560" height="315" src= frameborder="0" allowfullscreen></iframe>
+                            <div class="demo">
+                                <div style="height: 500px;">
+                                    <div id="defaultPlayer"></div>
+                                </div>
+                                <script>
+                                    $(function () {
+                                        $("#defaultPlayer").mediaPlayer({
+                                            autoplay: false,
+                                            src: "",
+                                            controlBar: {
+                                                autohide: false
+                                            }
+                                        });
+                                    });
+                                </script>
+                            </div>
                             <p>Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -655,7 +708,22 @@
                         <div class="modal-body">
                             <h2>Treehouse</h2>
                             <hr class="star-primary">
-                            <iframe width="560" height="315" src= frameborder="0" allowfullscreen></iframe>
+                            <div class="demo">
+                                <div style="height: 500px;">
+                                    <div id="defaultPlayer"></div>
+                                </div>
+                                <script>
+                                    $(function () {
+                                        $("#defaultPlayer").mediaPlayer({
+                                            autoplay: false,
+                                            src: "",
+                                            controlBar: {
+                                                autohide: false
+                                            }
+                                        });
+                                    });
+                                </script>
+                            </div>
                             <p>Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -693,7 +761,22 @@
                         <div class="modal-body">
                             <h2>Round Icons</h2>
                             <hr class="star-primary">
-                            <iframe width="560" height="315" src= frameborder="0" allowfullscreen></iframe>
+                            <div class="demo">
+                                <div style="height: 500px;">
+                                    <div id="defaultPlayer"></div>
+                                </div>
+                                <script>
+                                    $(function () {
+                                        $("#defaultPlayer").mediaPlayer({
+                                            autoplay: false,
+                                            src: "",
+                                            controlBar: {
+                                                autohide: false
+                                            }
+                                        });
+                                    });
+                                </script>
+                            </div>
                             <p>Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -731,7 +814,22 @@
                         <div class="modal-body">
                             <h2>Startup Framework</h2>
                             <hr class="star-primary">
-                            <iframe width="560" height="315" src= frameborder="0" allowfullscreen></iframe>
+                            <div class="demo">
+                                <div style="height: 500px;">
+                                    <div id="defaultPlayer"></div>
+                                </div>
+                                <script>
+                                    $(function () {
+                                        $("#defaultPlayer").mediaPlayer({
+                                            autoplay: false,
+                                            src: "",
+                                            controlBar: {
+                                                autohide: false
+                                            }
+                                        });
+                                    });
+                                </script>
+                            </div>
                             <p>Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.</p>
                             <ul class="list-inline item-details">
                                 <li>Client:
@@ -756,9 +854,7 @@
     </div>
 
 
-     <!-- jQuery Version 1.11.0 -->
-    <script src="/js/jquery-1.11.0.js"></script>
-
+    
     <!-- Bootstrap Core JavaScript -->
     <script src="/js/bootstrap.min.js"></script>
 
@@ -773,7 +869,6 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="/js/agency.js"></script>
-
 
     </body>
 </html>
