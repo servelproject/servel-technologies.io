@@ -11,6 +11,6 @@ project-date: April 2014
 client: Start Bootstrap
 category: Distribution
 description: blablabla
-video: "../video/processed_50_people_brooklyn_1280x720.mp4"
+video: "video/processed_50_people_brooklyn_1280x720.mp4"
 
 ---
