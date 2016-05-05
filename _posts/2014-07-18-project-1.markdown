@@ -11,5 +11,5 @@ project-date: April 2014
 client: Start Bootstrap
 category: Distribution
 description: We know where you watch!
-video: ../video/processed_50_people_brooklyn_1280x720.mp4
+video: video/processed_50_people_brooklyn_1280x720.mp4
 ---
