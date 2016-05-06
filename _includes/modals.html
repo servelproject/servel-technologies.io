@@ -22,13 +22,13 @@
                                 $( function () {
                                     $( "#defaultPlayer{{ post.modal-id }}" ).mediaPlayer( {
                                         autoplay : false,
-                                        src : "{{post.video}}",
+                                        src : "{{ post.video | prepend: site.baseurl }}",
                                         controlBar :
                                             {
                                                 sticky : true
                                             },
                                         plugins : {
-                                            dataServices : ['{{post.data}}'],
+                                            dataServices : ['{{ post.data | prepend: site.baseurl }}'],
                                             list : [
                                                 {
                                                     'className' : 'fr.ina.amalia.player.plugins.TimelinePlugin',
