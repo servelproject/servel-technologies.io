@@ -17,18 +17,19 @@
                             <div style="height:500px; width:100%">
                                 <div id="defaultPlayer{{ post.modal-id }}"></div>
                             </div>
-                            <div id="timeline"></div>
+                            <div style="height:350px; width:100%">
+                                <div id="timeline"></div>
+                            </div>  
                             <script>
                                 $( function () {
                                     $( "#defaultPlayer{{ post.modal-id }}" ).mediaPlayer( {
                                         autoplay : false,
-                                        src : "{{ post.video | prepend: site.baseurl }}",
-                                        controlBar :
-                                            {
-                                                sticky : true
-                                            },
+                                        src : "{{ post.video }}",
+                                        controlBar : {
+                                            sticky : true
+                                        },
                                         plugins : {
-                                            dataServices : ['{{ post.data | prepend: site.baseurl }}'],
+                                            dataServices : ['{{ post.data }}'],
                                             list : [
                                                 {
                                                     'className' : 'fr.ina.amalia.player.plugins.TimelinePlugin',
@@ -43,9 +44,9 @@
                                                             },
                                                             {
                                                                 title : 'Face 2',
-                                                                type : 'segments',
+                                                                type : 'segment',
                                                                 metadataId : 'faces-amalia',
-                                                                color : '#3CF'
+                                                                color : '#A31'
                                                             }
                                                         ]
                                                     }
