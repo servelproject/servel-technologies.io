@@ -11,6 +11,5 @@ project-date: April 2014
 client: Start Bootstrap
 category: Distribution
 description: blablabla
-video: https://www.youtube.com/embed/NVaqc8eQ2YQ
-
+video: video/processed_harry_potter_6_trailer_1280x544.mp4
 ---
