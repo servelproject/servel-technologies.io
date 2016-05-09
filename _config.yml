@@ -12,6 +12,7 @@ people:
 - name: Antonin Servouse
   pic: 1
   position: Porteur du projet
+  description: une description d'anto
   social:
     - title: twitter
       url: #
@@ -23,6 +24,7 @@ people:
 - name: Romain Trachel
   pic: 2
   position: Porteur du projet
+  description: une description de romain
   social:
     - title: twitter
       url: #
