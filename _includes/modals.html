@@ -18,8 +18,8 @@
                                 <div id="defaultPlayer{{ post.modal-id }}"></div>
                             </div>
                             <div style="height:350px; width:100%">
-                                <div id="timeline"></div>
-                            </div>  
+                                <div id="player-Timeline{{ post.modal-id }}"></div>
+                            </div>
                             <script>
                                 $( function () {
                                     $( "#defaultPlayer{{ post.modal-id }}" ).mediaPlayer( {
@@ -29,21 +29,25 @@
                                             sticky : true
                                         },
                                         plugins : {
-                                            dataServices : ['{{ post.data }}'],
+                                            dataServices : [
+                                                'json/amalia01-ball.json',
+                                                'json/amalia-faces.json'
+                                            ],
                                             list : [
                                                 {
                                                     'className' : 'fr.ina.amalia.player.plugins.TimelinePlugin',
-                                                    'container' : '#timeline',
+                                                    'container' : '#player-Timeline{{ post.modal-id }}',
                                                     'parameters' : {
                                                         listOfLines : [
                                                             {
                                                                 title : 'Face 1',
                                                                 type : 'segment',
                                                                 metadataId : 'ball-amalia01',
-                                                                color : '#F00'
+                                                                color : '#F00',
+                                                                pointNav: true
                                                             },
                                                             {
-                                                                title : 'Face 2',
+                                                                title : 'Face detection',
                                                                 type : 'segment',
                                                                 metadataId : 'faces-amalia',
                                                                 color : '#A31'

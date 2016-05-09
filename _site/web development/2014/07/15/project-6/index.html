@@ -29,8 +29,16 @@
     <script src="/js/bower_components/jquery/dist/jquery.js"></script>
     <script src="/js/bower_components/jquery-ui/jquery-ui.min.js"></script>
     <script src="/js/bower_components/raphael/raphael.js"></script>
+    <script src="/js/bower_components/qunit/qunit/qunit.js"></script>
+
     <script src="/js/amalia/amalia.js.min.js"></script>
-    <script src="/js/amalia/amalia.js-plugin-timeline.min.js"></script>    
+    <script src="/js/amalia/amalia.js-plugin-timeline.min.js"></script>
+    <script src="/js/amalia/amalia.js-plugin-overlay.min.js"></script>
+    <script src="/js/amalia/amalia.js-plugin-editor.min.js"></script>
+    <script src="/js/amalia/amalia.js-plugin-storyboard.min.js"></script>
+    <script src="/js/amalia/amalia.js-plugin-progress-bar.min.js"></script>
+    <script src="/js/amalia/amalia.js-logger.min.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -554,8 +562,8 @@
                                 <div id="defaultPlayer1"></div>
                             </div>
                             <div style="height:350px; width:100%">
-                                <div id="timeline"></div>
-                            </div>  
+                                <div id="player-Timeline1"></div>
+                            </div>
                             <script>
                                 $( function () {
                                     $( "#defaultPlayer1" ).mediaPlayer( {
@@ -565,21 +573,25 @@
                                             sticky : true
                                         },
                                         plugins : {
-                                            dataServices : ['json/amalia01-ball.json'],
+                                            dataServices : [
+                                                'json/amalia01-ball.json',
+                                                'json/amalia-faces.json'
+                                            ],
                                             list : [
                                                 {
                                                     'className' : 'fr.ina.amalia.player.plugins.TimelinePlugin',
-                                                    'container' : '#timeline',
+                                                    'container' : '#player-Timeline1',
                                                     'parameters' : {
                                                         listOfLines : [
                                                             {
                                                                 title : 'Face 1',
                                                                 type : 'segment',
                                                                 metadataId : 'ball-amalia01',
-                                                                color : '#F00'
+                                                                color : '#F00',
+                                                                pointNav: true
                                                             },
                                                             {
-                                                                title : 'Face 2',
+                                                                title : 'Face detection',
                                                                 type : 'segment',
                                                                 metadataId : 'faces-amalia',
                                                                 color : '#A31'
@@ -633,8 +645,8 @@
                                 <div id="defaultPlayer2"></div>
                             </div>
                             <div style="height:350px; width:100%">
-                                <div id="timeline"></div>
-                            </div>  
+                                <div id="player-Timeline2"></div>
+                            </div>
                             <script>
                                 $( function () {
                                     $( "#defaultPlayer2" ).mediaPlayer( {
@@ -644,21 +656,25 @@
                                             sticky : true
                                         },
                                         plugins : {
-                                            dataServices : ['json/amalia01-ball.json'],
+                                            dataServices : [
+                                                'json/amalia01-ball.json',
+                                                'json/amalia-faces.json'
+                                            ],
                                             list : [
                                                 {
                                                     'className' : 'fr.ina.amalia.player.plugins.TimelinePlugin',
-                                                    'container' : '#timeline',
+                                                    'container' : '#player-Timeline2',
                                                     'parameters' : {
                                                         listOfLines : [
                                                             {
                                                                 title : 'Face 1',
                                                                 type : 'segment',
                                                                 metadataId : 'ball-amalia01',
-                                                                color : '#F00'
+                                                                color : '#F00',
+                                                                pointNav: true
                                                             },
                                                             {
-                                                                title : 'Face 2',
+                                                                title : 'Face detection',
                                                                 type : 'segment',
                                                                 metadataId : 'faces-amalia',
                                                                 color : '#A31'
@@ -712,8 +728,8 @@
                                 <div id="defaultPlayer3"></div>
                             </div>
                             <div style="height:350px; width:100%">
-                                <div id="timeline"></div>
-                            </div>  
+                                <div id="player-Timeline3"></div>
+                            </div>
                             <script>
                                 $( function () {
                                     $( "#defaultPlayer3" ).mediaPlayer( {
@@ -723,21 +739,25 @@
                                             sticky : true
                                         },
                                         plugins : {
-                                            dataServices : [''],
+                                            dataServices : [
+                                                'json/amalia01-ball.json',
+                                                'json/amalia-faces.json'
+                                            ],
                                             list : [
                                                 {
                                                     'className' : 'fr.ina.amalia.player.plugins.TimelinePlugin',
-                                                    'container' : '#timeline',
+                                                    'container' : '#player-Timeline3',
                                                     'parameters' : {
                                                         listOfLines : [
                                                             {
                                                                 title : 'Face 1',
                                                                 type : 'segment',
                                                                 metadataId : 'ball-amalia01',
-                                                                color : '#F00'
+                                                                color : '#F00',
+                                                                pointNav: true
                                                             },
                                                             {
-                                                                title : 'Face 2',
+                                                                title : 'Face detection',
                                                                 type : 'segment',
                                                                 metadataId : 'faces-amalia',
                                                                 color : '#A31'
@@ -791,8 +811,8 @@
                                 <div id="defaultPlayer4"></div>
                             </div>
                             <div style="height:350px; width:100%">
-                                <div id="timeline"></div>
-                            </div>  
+                                <div id="player-Timeline4"></div>
+                            </div>
                             <script>
                                 $( function () {
                                     $( "#defaultPlayer4" ).mediaPlayer( {
@@ -802,21 +822,25 @@
                                             sticky : true
                                         },
                                         plugins : {
-                                            dataServices : [''],
+                                            dataServices : [
+                                                'json/amalia01-ball.json',
+                                                'json/amalia-faces.json'
+                                            ],
                                             list : [
                                                 {
                                                     'className' : 'fr.ina.amalia.player.plugins.TimelinePlugin',
-                                                    'container' : '#timeline',
+                                                    'container' : '#player-Timeline4',
                                                     'parameters' : {
                                                         listOfLines : [
                                                             {
                                                                 title : 'Face 1',
                                                                 type : 'segment',
                                                                 metadataId : 'ball-amalia01',
-                                                                color : '#F00'
+                                                                color : '#F00',
+                                                                pointNav: true
                                                             },
                                                             {
-                                                                title : 'Face 2',
+                                                                title : 'Face detection',
                                                                 type : 'segment',
                                                                 metadataId : 'faces-amalia',
                                                                 color : '#A31'
@@ -870,8 +894,8 @@
                                 <div id="defaultPlayer6"></div>
                             </div>
                             <div style="height:350px; width:100%">
-                                <div id="timeline"></div>
-                            </div>  
+                                <div id="player-Timeline6"></div>
+                            </div>
                             <script>
                                 $( function () {
                                     $( "#defaultPlayer6" ).mediaPlayer( {
@@ -881,21 +905,25 @@
                                             sticky : true
                                         },
                                         plugins : {
-                                            dataServices : [''],
+                                            dataServices : [
+                                                'json/amalia01-ball.json',
+                                                'json/amalia-faces.json'
+                                            ],
                                             list : [
                                                 {
                                                     'className' : 'fr.ina.amalia.player.plugins.TimelinePlugin',
-                                                    'container' : '#timeline',
+                                                    'container' : '#player-Timeline6',
                                                     'parameters' : {
                                                         listOfLines : [
                                                             {
                                                                 title : 'Face 1',
                                                                 type : 'segment',
                                                                 metadataId : 'ball-amalia01',
-                                                                color : '#F00'
+                                                                color : '#F00',
+                                                                pointNav: true
                                                             },
                                                             {
-                                                                title : 'Face 2',
+                                                                title : 'Face detection',
                                                                 type : 'segment',
                                                                 metadataId : 'faces-amalia',
                                                                 color : '#A31'
@@ -949,8 +977,8 @@
                                 <div id="defaultPlayer5"></div>
                             </div>
                             <div style="height:350px; width:100%">
-                                <div id="timeline"></div>
-                            </div>  
+                                <div id="player-Timeline5"></div>
+                            </div>
                             <script>
                                 $( function () {
                                     $( "#defaultPlayer5" ).mediaPlayer( {
@@ -960,21 +988,25 @@
                                             sticky : true
                                         },
                                         plugins : {
-                                            dataServices : [''],
+                                            dataServices : [
+                                                'json/amalia01-ball.json',
+                                                'json/amalia-faces.json'
+                                            ],
                                             list : [
                                                 {
                                                     'className' : 'fr.ina.amalia.player.plugins.TimelinePlugin',
-                                                    'container' : '#timeline',
+                                                    'container' : '#player-Timeline5',
                                                     'parameters' : {
                                                         listOfLines : [
                                                             {
                                                                 title : 'Face 1',
                                                                 type : 'segment',
                                                                 metadataId : 'ball-amalia01',
-                                                                color : '#F00'
+                                                                color : '#F00',
+                                                                pointNav: true
                                                             },
                                                             {
-                                                                title : 'Face 2',
+                                                                title : 'Face detection',
                                                                 type : 'segment',
                                                                 metadataId : 'faces-amalia',
                                                                 color : '#A31'
@@ -1026,6 +1058,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="/js/agency.js"></script>
+
 
     </body>
 </html>
