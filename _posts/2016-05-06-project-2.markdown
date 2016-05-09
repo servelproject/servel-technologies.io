@@ -1,0 +1,17 @@
+---
+title: Heatmap for movie trailers
+subtitle: Visualize where viewers pay attention
+layout: default
+modal-id: 2
+date: 2014-07-17
+img: heatmap.png
+thumbnail: heatmap-thumbnail.png
+alt: image-alt
+project-date: April 2014
+client: The DIEM Project
+clink: https://thediemproject.wordpress.com/videos-and%C2%A0data/
+category: Distribution
+description: This is an example of a gaze map (or heatmap) for measuring where viewers pay attention. The dataset was obtained from the DIEM database including 32 participants watching the tailer of Harry Potter 6. Hot spots correspond to high density of viewers gaze. 
+video: video/processed_harry_potter_6_trailer_1280x544.mp4
+data: 'json/amalia01-ball.json'
+---
