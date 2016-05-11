@@ -1,0 +1,18 @@
+---
+title: Heart Beat for Fear Detection
+subtitle: Scary Scenes Accelerate Heart Beats
+layout: default
+modal-id: 3
+date: 2016-05-11
+img: 
+thumbnail: fear-thumbnail.png
+alt: image-alt
+project-date: April 2014
+client: The SERVEL Project
+clink: 
+category: Distribution
+description: This is an example of heart beat analysis to detect fear in video scenes. The dataset was recorded "at home" while watching the Shinning movie. The viewer is afraid by this particular scene. This is precisely measured by the heart beat-per-minute acceleration (shown in green, top-left corner).
+youtubelink: "https://www.youtube.com/embed/ajNJvq2_mhM"
+video: 
+data: ''
+---
