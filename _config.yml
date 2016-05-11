@@ -6,32 +6,27 @@ title: SERVEL Project
 email: servelproject@gmail.com
 description: "Assurez la réussite de votre oeuvre audiovisuelle en travaillant avec servel."
 
-
 # Team names, titles and social links
 people:
 - name: Antonin Servouse
   pic: 1
   position: project's holder
-  description: three years of experience as financial analyst .  Well skilled to run a business , to ensure company viability and rise new financing. Antonin is also passionate about video games and movies.
+  description: Antonin has three years of experience as financial analyst. Well skilled to run a business, to ensure company viability and rise new financing. Antonin is also passionate about video games and movies.
   social:
-    - title: twitter
-      url: #
     - title: facebook
       url: #
-    - title: stack-overflow
-      url: #
+    - title: linkedin
+      url: https://fr.linkedin.com/in/antonin-servouse-156755b0
 
 - name: Romain Trachel
   pic: 2
   position: project's holder
-  description: six years of experience in brain-computer interfaces , visual and auditory attention. Ideal aptitudes for developing a technological startup . Romain is passionate about science, innovation and new technologies.
+  description: Romain has six years of experience in brain-computer interfaces, visual/auditory attention and ideal aptitudes for developing a technological startup. Romain is passionate about science, innovation and new technologies.
   social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
+    - title: github
+      url: https://github.com/trachelr
     - title: linkedin
-      url: #
+      url: https://fr.linkedin.com/in/trachelr
 
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
