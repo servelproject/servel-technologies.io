@@ -11,7 +11,7 @@ people:
 - name: Antonin Servouse
   pic: 1
   position: project's holder
-  description: Antonin has three years of experience as financial analyst. He is well skilled to run a business, to ensure company viability and rise new financing. Antonin is also passionate about video games and movies.
+  description: Antonin is passionate about video games, interactive media and cinema. He has three years of experience as financial analyst and ideal skills to run a business, ensure company viability and rise new financing.
   social:
     - title: facebook
       url: #
@@ -21,7 +21,7 @@ people:
 - name: Romain Trachel
   pic: 2
   position: project's holder
-  description: Romain has six years of experience in brain-computer interfaces, visual/auditory attention and ideal aptitudes for developing a technological startup. Romain is passionate about science, innovation and new technologies.
+  description: Romain is passionate about science, innovation and new technologies. He has six years of experience in computer science, neuroscience and ideal aptitudes to develop a startup and find new solutions.
   social:
     - title: github
       url: https://github.com/trachelr

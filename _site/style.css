@@ -26,12 +26,12 @@ body {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.75;
 }
 
 p.large {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 a,
@@ -290,7 +290,7 @@ header .intro-text {
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif;
-    font-size: 12px;
+    font-size: 26px;
     font-style: italic;
     line-height: 44;
 }
@@ -661,7 +661,8 @@ section h3.section-subheading {
 }
 
 .team-member p {
-    margin-top: 0;
+    margin-top: 10px;
+    font-height: 12px;
 }
 
 aside.clients img {
