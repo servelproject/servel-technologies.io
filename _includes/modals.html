@@ -14,65 +14,20 @@
                         <div class="modal-body">
                             <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
-                            <div style="height:500px; width:100%">
-                                <div id="defaultPlayer{{ post.modal-id }}"></div>
-                            </div>
-                            <div style="height:350px; width:100%">
-                                <div id="player-Timeline{{ post.modal-id }}"></div>
-                            </div>
-                            <script>
-                                $( function () {
-                                    $( "#defaultPlayer{{ post.modal-id }}" ).mediaPlayer( {
-                                        autoplay : false,
-                                        src : "{{ post.video }}",
-                                        controlBar : {
-                                            sticky : true
-                                        },
-                                        plugins : {
-                                            dataServices : [
-                                                'json/amalia01-ball.json',
-                                                'json/amalia-faces.json'
-                                            ],
-                                            list : [
-                                                {
-                                                    'className' : 'fr.ina.amalia.player.plugins.TimelinePlugin',
-                                                    'container' : '#player-Timeline{{ post.modal-id }}',
-                                                    'parameters' : {
-                                                        listOfLines : [
-                                                            {
-                                                                title : 'Face 1',
-                                                                type : 'segment',
-                                                                metadataId : 'ball-amalia01',
-                                                                color : '#F00',
-                                                                pointNav: true
-                                                            },
-                                                            {
-                                                                title : 'Face detection',
-                                                                type : 'segment',
-                                                                metadataId : 'faces-amalia',
-                                                                color : '#A31'
-                                                            }
-                                                        ]
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    } );
-                                } );
-                            </script>
+                            <iframe width="640" height="360" src={{ post.youtubelink }} frameborder="0" allowfullscreen></iframe>
                         </div>
                         <p>{{ post.description }}</p>
                         <ul class="list-inline item-details">
                             <li>Client:
-                                <strong><a href="{{post.clink}}">{{ post.client }}</a>
+                                <strong><a href="http://startbootstrap.com">{{ post.client }}</a>
                                 </strong>
                             </li>
                             <li>Date:
-                                <strong><a href="">{{ post.project-date }}</a>
+                                <strong><a href="http://startbootstrap.com">{{ post.project-date }}</a>
                                 </strong>
                             </li>
                             <li>Service:
-                                <strong><a href="">{{ post.category }}</a>
+                                <strong><a href="http://startbootstrap.com">{{ post.category }}</a>
                                 </strong>
                             </li>
                         </ul>
